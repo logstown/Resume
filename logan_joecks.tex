@@ -1,0 +1,121 @@
+\documentclass[12pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Logan}{Joecks}
+\title{Web Developer}                               % optional, remove / comment the line if not wanted
+\address{Ommited for web}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{Ommitted for web}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+% \phone[fixed]{+2~(345)~678~901}
+% \phone[fax]{+3~(456)~789~012}
+\email{contact@loganjoecks.com}                               % optional, remove / comment the line if not wanted
+\homepage{loganjoecks.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{loganjoecks}                        % optional, remove / comment the line if not wanted
+% \social[twitter]{logstaa}                             % optional, remove / comment the line if not wanted
+\social[github]{logstown}                              % optional, remove / comment the line if not wanted
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+% Added to create colored links
+\newcommand\Colorhref[3][cyan]{\href{#2}{\small\color{#1}#3}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Technical skills}
+\subsection{Web Development}
+\cvdoubleitem{Code Samples}{\Colorhref[gray]{http://github.com/logstown}{\githubsocialsymbol github.com/logstown}}{Live Applications}{\Colorhref{http://loganjoecks.com/projects}{loganjoecks.com/projects}\newline{}}
+\begin{cvcolumns}
+  \cvcolumn{Back End}{\begin{itemize}\item PHP \begin{itemize} \item Laravel \item CodeIgnitor \end{itemize} \item MySQL\item Wordpress\item C++\item Python \begin{itemize}\item Django \end{itemize} \end{itemize}}
+  \cvcolumn{Front End}{\begin{itemize}\item HTML \item CSS \item Javascript \item jQuery \item Bootstrap \item arbor.js\end{itemize}Experience with Facebook \& Google Maps APIs}
+  \cvcolumn{Administration}{\begin{itemize}\item git\item Linux\item Unix\item Vim \item Apache \item VC/m \item Windows\item OS X \end{itemize}}
+\end{cvcolumns}
+\subsection{Healthcare IT}
+\cvitem{}{Magic, NPR (Client/Server and Magic), NPR Report-writer, Cach\'e}
+
+\section{Experience}
+\subsection{Professional}
+\cventry{2010--Present}{Technical Consultant}{Vision Consulting}{Nashville, TN}{}{Currently based remotely in California
+\begin{itemize}%
+\item Develops extracts and NPR reports for various clients using NPR report-writer (proprietary Meditech software)
+  \begin{itemize}%
+  \item Develops new reports based on client specifications and fixes issues with existing reports
+  \item Communicates with clients to understand their needs
+  \end{itemize}
+\item Consulted with Hospital Corporation of America, supporting a variety of Meditech modules
+  \begin{itemize}%
+  \item Supported Horizon Patient Folder framework interface
+  \item Wrote SQL to query Meditech data repository for SSRS development
+  \end{itemize}
+\item Regular weekly travel to and from national headquarters in Nashville, TN (2010--2011)
+\end{itemize}}
+
+\cventry{2009-2010}{Programmer Analyst}{Partners HealthCare}{Wellesley, MA}{}{Experience in software development life cycle from analysis and design to coding and testing for the Admitting Outpatient application (ADO) for Brigham and Women`s Hospital 
+\begin{itemize}%
+\item Developed projects for requested enhancements
+  \begin{itemize}%
+  \item Wrote code based on technical specifications
+  \item Worked with Quality Control to ensure enhancement was functioning as designed
+  \end{itemize}
+\item Fixed issues reported by clients and in-house staff
+\item Provided 24-hour on-call support for ADO over week-long periods and fixed priority technical issues \newline{}
+\end{itemize}}
+
+\cventry{2006-2008}{Development Programmer}{Meditech}{Canton, MA}{}{Experience in software development life cycle for the Imaging and Therapeutic Services (ITS) module  
+\begin{itemize}%
+\item Developed projects for requested enhancements and fixed issues reported by clients and in-house staff
+  \begin{itemize}%
+  \item Created technical specifications and wrote code based on specifications
+  \item Worked with QC to ensure enhancement was functioning as designed
+  \item Designated ``Project Coordinator`` on multiple occasions
+  \end{itemize}
+\end{itemize}}
+
+\cventry{2005-2006}{Development Specialist}{}{}{}{Quality Assurance for ITS  
+\begin{itemize}%
+\item Created functional specifications for new enhancements
+\item Designed and executed testing plans for reported issues \newline{}
+\end{itemize}}
+
+\subsection{Additional}
+\cventry{2008}{Thru-Hiker}{Appalachian Trail}{Georgia to Maine}{}{Hiked 2176 miles from March to September sleeping in backpacking tent 
+\begin{itemize}%
+\item Blog: \Colorhref{http://ga2me.blogspot.com}{ga2me.blogspot.com}
+\end{itemize}}
+
+\section{Education}
+\cventry{2001--2005}{B.A Mathematics}{University of New Hampshire}{Durham, NH}{\textit{}}{Additional Coursework in Computer Science. Minor in English}  % arguments 3 to 6 can be left empty
+
+\end{document}
+
+
+
